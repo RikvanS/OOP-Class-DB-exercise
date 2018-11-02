@@ -5,9 +5,9 @@ class ViewUser extends User {
     public function showAllUsers() {
     $datas = $this->getAllUsers();
     foreach ($datas as $data) {
-    echo $data['id']."<br>";
-    echo $data['username']."<br>";
-    echo $data['password']."<br>";
+    echo  "User ID is " .$data['id']."<br>";
+    echo "Username is " .$data['username']."<br>";
+    echo "Password is " .$data['password']."<br><br>";
     }
     }
 }
